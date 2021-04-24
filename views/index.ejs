@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repo List</title>
+</head>
+<body>
+    <h1>Repo List</h1>
+    <hr>
+    <h2>User <%= user.username %> </h2>
+    <img src="<%= user.avatar_url %>" alt="Avatar github <%= user.username %>" width="100">
+
+    <hr>
+    <h2>Repo List</h2>
+    
+    <% for(var i=0; i<user.repositories.length; i++) {%>
+        <p>
+            <a href="<%=user.repositories[i]['html_url'] %>" target="_blank">  
+                <%=user.repositories[i]['name'] %>
+            </a></p>
+    <% } %>
+</body>
+</html> 
