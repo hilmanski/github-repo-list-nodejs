@@ -15,11 +15,18 @@
     <hr>
     <h2>Repo List</h2>
     
+    <div>
     <% for(var i=0; i<user.repositories.length; i++) {%>
         <p>
             <a href="<%=user.repositories[i]['html_url'] %>" target="_blank">  
                 <%=user.repositories[i]['name'] %>
             </a></p>
     <% } %>
+    </div>
+
+    <div>
+    <p><a href="https://github.com/hilmanski"> Created by: hilmanski</a></p>
+    <p><a href="https://github.com/hilmanski/github-repo-list-nodejs">Source code: https://github.com/hilmanski/github-repo-list-nodejs</a></p>
+    </div>
 </body>
 </html> 
