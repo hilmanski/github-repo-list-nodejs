@@ -70,7 +70,7 @@ app.get('/oauth_callback', (req, res) => {
     showCompleteProfile(req.query.code, res)
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 // Created by: hilmanski
 // source code: https://github.com/hilmanski/github-repo-list-nodejs
