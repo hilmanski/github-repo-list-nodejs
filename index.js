@@ -73,4 +73,4 @@ app.get('/oauth_callback', (req, res) => {
 app.listen(3000);
 
 // Created by: hilmanski
-// source code: github link
+// source code: https://github.com/hilmanski/github-repo-list-nodejs
