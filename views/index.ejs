@@ -16,10 +16,10 @@
     <h2>Repo List</h2>
     
     <div>
-    <% for(var i=0; i<user.repositories.length; i++) {%>
+    <% for(var i=0; i<repositories.length; i++) {%>
         <p>
-            <a href="<%=user.repositories[i]['html_url'] %>" target="_blank">  
-                <%=user.repositories[i]['name'] %>
+            <a href="<%=repositories[i]['html_url'] %>" target="_blank">  
+                <%=repositories[i]['name'] %>
             </a></p>
     <% } %>
     </div>
